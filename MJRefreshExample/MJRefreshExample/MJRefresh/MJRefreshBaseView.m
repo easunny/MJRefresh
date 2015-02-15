@@ -33,6 +33,8 @@
         statusLabel.autoresizingMask = UIViewAutoresizingFlexibleWidth;
         statusLabel.font = [UIFont boldSystemFontOfSize:14];
         statusLabel.textColor = MJRefreshLabelTextColor;
+        statusLabel.shadowColor = [UIColor colorWithWhite:0.9f alpha:1.0f];
+        statusLabel.shadowOffset = CGSizeMake(0.0f, 1.0f);
         statusLabel.backgroundColor = [UIColor clearColor];
         statusLabel.textAlignment = NSTextAlignmentCenter;
         [self addSubview:_statusLabel = statusLabel];
@@ -73,7 +75,7 @@
     if (self = [super initWithFrame:frame]) {
         // 1.自己的属性
         self.autoresizingMask = UIViewAutoresizingFlexibleWidth;
-        self.backgroundColor = [UIColor clearColor];
+        self.backgroundColor = [UIColor whiteColor];
         
         // 2.设置默认状态
         self.state = MJRefreshStateNormal;

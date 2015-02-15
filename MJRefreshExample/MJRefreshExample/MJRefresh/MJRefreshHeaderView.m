@@ -32,6 +32,8 @@
         lastUpdateTimeLabel.textColor = MJRefreshLabelTextColor;
         lastUpdateTimeLabel.backgroundColor = [UIColor clearColor];
         lastUpdateTimeLabel.textAlignment = NSTextAlignmentCenter;
+        lastUpdateTimeLabel.shadowColor = [UIColor colorWithWhite:0.9f alpha:1.0f];
+        lastUpdateTimeLabel.shadowOffset = CGSizeMake(0.0f, 1.0f);
         [self addSubview:_lastUpdateTimeLabel = lastUpdateTimeLabel];
         
         // 2.加载时间
